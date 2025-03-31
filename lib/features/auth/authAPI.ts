@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_FIREBASE_API_URL;
 
 export interface WalletSigninDto {
   signature: string;
@@ -6,6 +6,7 @@ export interface WalletSigninDto {
   publicAddress: string;
   chainId: number;
 }
+
 export interface GoogleSigninDto {
   token: string;
 }
